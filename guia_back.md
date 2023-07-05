@@ -59,3 +59,6 @@ luego se desmonta el servidor y  se reinicia el servidor para que se cree la bas
 
 # despliege  en railway 
 se  crea cuenta en railway
+
+
+//MONGO_URI=mongodb+srv://root:admin@clusterpruebas.8qmotq9.mongodb.net/apv?retryWrites=true&w=majority  

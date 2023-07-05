@@ -12,7 +12,7 @@ dotenv.config(); // para poder usar las variables de entorno
 connectDB(); // conexion del servidor a base de datos
 
 // configuracion de cors
-const dominiosPermitidos = ["http://localhost:3000"] // dominios permitidos para recibir peticiones
+const dominiosPermitidos = ["https://front-appveterinarios.vercel.app"] // dominios permitidos para recibir peticiones
 
 
 const corsOptions = {
@@ -35,8 +35,8 @@ app.use("/api/pacientes", PacienteRoutes);
 
 
 // puerto de la app
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4200;
 
 app.listen(PORT, () => {
-    console.log("Servidor ejecutandose en el puerto 4000");
+    console.log("Servidor ejecutandose en el puerto 4200");
 });

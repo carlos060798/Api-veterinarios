@@ -23,12 +23,13 @@ const Registrar = async (req, res) => {
     const nuevoveterinario = new Veterinario(req.body); //crea un nuevo usuario
     const Veterinarioguardado = await nuevoveterinario.save(); //guarda el usuario en la base de datos
     // enviar email de confirmación
+    console.log(Veterinarioguardado);
     sendEmailRegistro({
       email,
       nombre,
       token: Veterinarioguardado.token,
     });
-
+     
     res.json({ Veterinarioguardado }); //envia un mensaje de confirmación
   } catch (error) {
     console.log(error);
